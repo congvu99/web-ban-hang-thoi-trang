@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>Vendor/Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<title>Quản trị tài khoản</title>
+</head>
+<body>
+
+	<div class="container">
+		<h3 class=" alert alert-primary text-sm-center mt-3">UPDATE DỮ LIỆU</h3>
+		<hr>
+		<div class="row">
+			<div class="col-sm-8 mt-5 push-sm-2">
+					<form action="<?php echo base_url(); ?>index.php/Update_user/UpdateData/<?= $giatri['id'] ?>" method="post" enctype="multipart/form-data">
+				<div class="card-deck">
+  					<div class="card">
+			      		<h5 class="card-title">Update Uername</h5>
+			      		<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" name="ten">
+						<h5 class="card-title">Update Password</h5>
+			      		
+						<input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping" name="mk">
+						<h5 class="card-title">Update Level</h5>
+			      		
+						<input type="text" class="form-control" placeholder="Level" aria-label="Username" aria-describedby="addon-wrapping" name="lv">
+						
+						
+						<input type="submit" class="btn btn-danger btn btn-block" value="Update dữ liệu">
+
+			    	</div>
+			 	 </div>
+			</form>
+			</div>
+		
+		</div>
+	</div>
+</body>
+</html>
